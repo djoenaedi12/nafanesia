@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:mobile/core/themes/theme_colors.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key, required this.navigationShell});
@@ -17,6 +18,7 @@ class _MainScreenState extends State<MainScreen> {
       body: widget.navigationShell,
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: widget.navigationShell.currentIndex,
+        selectedItemColor: ThemeColors.primary,
         onTap: (int index) => widget.navigationShell.goBranch(index),
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),

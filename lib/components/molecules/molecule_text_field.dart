@@ -50,7 +50,7 @@ class MoleculeTextField extends StatelessWidget {
             prefixIcon: prefixIcon,
             suffixIcon: suffixIcon,
             filled: true,
-            fillColor: ThemeColors.black,
+            fillColor: ThemeColors.darkGrey,
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(ConstantSizes.defaultRadius),
             ),

@@ -10,4 +10,5 @@ abstract class ThemeColors {
   static const Color darkGrey = Color(0xFF161618);
   static const Color white = Color(0xFFFFFFFF);
   static const Color black = Color(0xFF000000);
+  static const Color borderGrey = Color.fromARGB(255, 36, 38, 43);
 }

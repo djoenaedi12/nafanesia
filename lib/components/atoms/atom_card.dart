@@ -15,7 +15,7 @@ class AtomCard extends StatelessWidget {
       decoration: BoxDecoration(
         color: ThemeColors.darkGrey,
         borderRadius: BorderRadius.circular(ConstantSizes.defaultRadius),
-        border: Border.all(color: ThemeColors.grey, width: 1),
+        border: Border.all(color: ThemeColors.borderGrey, width: 1),
       ),
       child: child,
     );

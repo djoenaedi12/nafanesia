@@ -119,6 +119,18 @@ class AtomText extends StatelessWidget {
     );
   }
 
+  factory AtomText.liveTime(String text, TextAlign? textAlign, Color? color) {
+    return AtomText._(
+      text: text,
+      style: GoogleFonts.inter(
+        fontWeight: FontWeight.w700,
+        fontSize: 48,
+        color: color,
+      ),
+      textAlign: textAlign,
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Text(text, style: style, textAlign: textAlign);

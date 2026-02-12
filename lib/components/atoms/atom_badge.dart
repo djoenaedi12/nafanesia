@@ -3,7 +3,7 @@ import 'package:mobile/components/atoms/atom_text.dart';
 import 'package:mobile/core/constants/constant_sizes.dart';
 import 'package:mobile/core/themes/theme_colors.dart';
 
-enum AtomBadgeVariant { success, error, warning, info }
+enum AtomBadgeVariant { primary, success, error, warning, info }
 
 class AtomBadge extends StatelessWidget {
   final Widget child;
@@ -65,6 +65,11 @@ class AtomBadge extends StatelessWidget {
         return _AtomBadgeColors(
           background: ThemeColors.info.withValues(alpha: 0.2),
           text: ThemeColors.info,
+        );
+      case AtomBadgeVariant.primary:
+        return _AtomBadgeColors(
+          background: ThemeColors.primary.withValues(alpha: 0.2),
+          text: ThemeColors.primary,
         );
     }
   }
