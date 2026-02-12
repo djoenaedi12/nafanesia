@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:mobile/core/themes/theme_colors.dart';
 
 abstract class Themes {
-  static ThemeData lightTheme = ThemeData();
+  static ThemeData lightTheme = ThemeData(
+    brightness: Brightness.light,
+    scaffoldBackgroundColor: ThemeColors.white,
+    colorSchemeSeed: ThemeColors.primary,
+  );
 
   static ThemeData darkTheme = ThemeData(
     brightness: Brightness.dark,
-    scaffoldBackgroundColor: Color(0xFF0B0B0C),
-    colorSchemeSeed: Color(0xFFF8B522),
+    scaffoldBackgroundColor: ThemeColors.black,
+    colorSchemeSeed: ThemeColors.primary,
   );
 }
